@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B6D96A822308ED4009E4363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96A722308ED4009E4363 /* AppDelegate.swift */; };
+		9B6D96AA22308ED4009E4363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96A922308ED4009E4363 /* ViewController.swift */; };
+		9B6D96AD22308ED4009E4363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D96AB22308ED4009E4363 /* Main.storyboard */; };
+		9B6D96AF22308ED4009E4363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D96AE22308ED4009E4363 /* Assets.xcassets */; };
+		9B6D96B222308ED4009E4363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D96B022308ED4009E4363 /* LaunchScreen.storyboard */; };
+		9B6D96BD22308ED4009E4363 /* Day3_W2019_iOS_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96BC22308ED4009E4363 /* Day3_W2019_iOS_LoginTests.swift */; };
+		9B6D96C822308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96C722308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9B6D96B922308ED4009E4363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B6D969C22308ED4009E4363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B6D96A322308ED4009E4363;
+			remoteInfo = Day3_W2019_iOS_Login;
+		};
+		9B6D96C422308ED4009E4363 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9B6D969C22308ED4009E4363 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B6D96A322308ED4009E4363;
+			remoteInfo = Day3_W2019_iOS_Login;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9B6D96A422308ED4009E4363 /* Day3_W2019_iOS_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day3_W2019_iOS_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6D96A722308ED4009E4363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9B6D96A922308ED4009E4363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B6D96AC22308ED4009E4363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9B6D96AE22308ED4009E4363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9B6D96B122308ED4009E4363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9B6D96B322308ED4009E4363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6D96B822308ED4009E4363 /* Day3_W2019_iOS_LoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day3_W2019_iOS_LoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6D96BC22308ED4009E4363 /* Day3_W2019_iOS_LoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3_W2019_iOS_LoginTests.swift; sourceTree = "<group>"; };
+		9B6D96BE22308ED4009E4363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6D96C322308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day3_W2019_iOS_LoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B6D96C722308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3_W2019_iOS_LoginUITests.swift; sourceTree = "<group>"; };
+		9B6D96C922308ED4009E4363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B6D96A122308ED4009E4363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D96B522308ED4009E4363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D96C022308ED4009E4363 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9B6D969B22308ED4009E4363 = {
+			isa = PBXGroup;
+			children = (
+				9B6D96A622308ED4009E4363 /* Day3_W2019_iOS_Login */,
+				9B6D96BB22308ED4009E4363 /* Day3_W2019_iOS_LoginTests */,
+				9B6D96C622308ED4009E4363 /* Day3_W2019_iOS_LoginUITests */,
+				9B6D96A522308ED4009E4363 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9B6D96A522308ED4009E4363 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D96A422308ED4009E4363 /* Day3_W2019_iOS_Login.app */,
+				9B6D96B822308ED4009E4363 /* Day3_W2019_iOS_LoginTests.xctest */,
+				9B6D96C322308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B6D96A622308ED4009E4363 /* Day3_W2019_iOS_Login */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D96A722308ED4009E4363 /* AppDelegate.swift */,
+				9B6D96A922308ED4009E4363 /* ViewController.swift */,
+				9B6D96AB22308ED4009E4363 /* Main.storyboard */,
+				9B6D96AE22308ED4009E4363 /* Assets.xcassets */,
+				9B6D96B022308ED4009E4363 /* LaunchScreen.storyboard */,
+				9B6D96B322308ED4009E4363 /* Info.plist */,
+			);
+			path = Day3_W2019_iOS_Login;
+			sourceTree = "<group>";
+		};
+		9B6D96BB22308ED4009E4363 /* Day3_W2019_iOS_LoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D96BC22308ED4009E4363 /* Day3_W2019_iOS_LoginTests.swift */,
+				9B6D96BE22308ED4009E4363 /* Info.plist */,
+			);
+			path = Day3_W2019_iOS_LoginTests;
+			sourceTree = "<group>";
+		};
+		9B6D96C622308ED4009E4363 /* Day3_W2019_iOS_LoginUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9B6D96C722308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.swift */,
+				9B6D96C922308ED4009E4363 /* Info.plist */,
+			);
+			path = Day3_W2019_iOS_LoginUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9B6D96A322308ED4009E4363 /* Day3_W2019_iOS_Login */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6D96CC22308ED4009E4363 /* Build configuration list for PBXNativeTarget "Day3_W2019_iOS_Login" */;
+			buildPhases = (
+				9B6D96A022308ED4009E4363 /* Sources */,
+				9B6D96A122308ED4009E4363 /* Frameworks */,
+				9B6D96A222308ED4009E4363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Day3_W2019_iOS_Login;
+			productName = Day3_W2019_iOS_Login;
+			productReference = 9B6D96A422308ED4009E4363 /* Day3_W2019_iOS_Login.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9B6D96B722308ED4009E4363 /* Day3_W2019_iOS_LoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6D96CF22308ED4009E4363 /* Build configuration list for PBXNativeTarget "Day3_W2019_iOS_LoginTests" */;
+			buildPhases = (
+				9B6D96B422308ED4009E4363 /* Sources */,
+				9B6D96B522308ED4009E4363 /* Frameworks */,
+				9B6D96B622308ED4009E4363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B6D96BA22308ED4009E4363 /* PBXTargetDependency */,
+			);
+			name = Day3_W2019_iOS_LoginTests;
+			productName = Day3_W2019_iOS_LoginTests;
+			productReference = 9B6D96B822308ED4009E4363 /* Day3_W2019_iOS_LoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9B6D96C222308ED4009E4363 /* Day3_W2019_iOS_LoginUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B6D96D222308ED4009E4363 /* Build configuration list for PBXNativeTarget "Day3_W2019_iOS_LoginUITests" */;
+			buildPhases = (
+				9B6D96BF22308ED4009E4363 /* Sources */,
+				9B6D96C022308ED4009E4363 /* Frameworks */,
+				9B6D96C122308ED4009E4363 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9B6D96C522308ED4009E4363 /* PBXTargetDependency */,
+			);
+			name = Day3_W2019_iOS_LoginUITests;
+			productName = Day3_W2019_iOS_LoginUITests;
+			productReference = 9B6D96C322308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B6D969C22308ED4009E4363 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = MacStudent;
+				TargetAttributes = {
+					9B6D96A322308ED4009E4363 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9B6D96B722308ED4009E4363 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9B6D96A322308ED4009E4363;
+					};
+					9B6D96C222308ED4009E4363 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9B6D96A322308ED4009E4363;
+					};
+				};
+			};
+			buildConfigurationList = 9B6D969F22308ED4009E4363 /* Build configuration list for PBXProject "Day3_W2019_iOS_Login" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9B6D969B22308ED4009E4363;
+			productRefGroup = 9B6D96A522308ED4009E4363 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B6D96A322308ED4009E4363 /* Day3_W2019_iOS_Login */,
+				9B6D96B722308ED4009E4363 /* Day3_W2019_iOS_LoginTests */,
+				9B6D96C222308ED4009E4363 /* Day3_W2019_iOS_LoginUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B6D96A222308ED4009E4363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6D96B222308ED4009E4363 /* LaunchScreen.storyboard in Resources */,
+				9B6D96AF22308ED4009E4363 /* Assets.xcassets in Resources */,
+				9B6D96AD22308ED4009E4363 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D96B622308ED4009E4363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D96C122308ED4009E4363 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B6D96A022308ED4009E4363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6D96AA22308ED4009E4363 /* ViewController.swift in Sources */,
+				9B6D96A822308ED4009E4363 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D96B422308ED4009E4363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6D96BD22308ED4009E4363 /* Day3_W2019_iOS_LoginTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B6D96BF22308ED4009E4363 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B6D96C822308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9B6D96BA22308ED4009E4363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B6D96A322308ED4009E4363 /* Day3_W2019_iOS_Login */;
+			targetProxy = 9B6D96B922308ED4009E4363 /* PBXContainerItemProxy */;
+		};
+		9B6D96C522308ED4009E4363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9B6D96A322308ED4009E4363 /* Day3_W2019_iOS_Login */;
+			targetProxy = 9B6D96C422308ED4009E4363 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9B6D96AB22308ED4009E4363 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B6D96AC22308ED4009E4363 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9B6D96B022308ED4009E4363 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9B6D96B122308ED4009E4363 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9B6D96CA22308ED4009E4363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9B6D96CB22308ED4009E4363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9B6D96CD22308ED4009E4363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Day3_W2019_iOS_Login/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CestarCollege.Day3-W2019-iOS-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9B6D96CE22308ED4009E4363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Day3_W2019_iOS_Login/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CestarCollege.Day3-W2019-iOS-Login";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9B6D96D022308ED4009E4363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Day3_W2019_iOS_LoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CestarCollege.Day3-W2019-iOS-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day3_W2019_iOS_Login.app/Day3_W2019_iOS_Login";
+			};
+			name = Debug;
+		};
+		9B6D96D122308ED4009E4363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Day3_W2019_iOS_LoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CestarCollege.Day3-W2019-iOS-LoginTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Day3_W2019_iOS_Login.app/Day3_W2019_iOS_Login";
+			};
+			name = Release;
+		};
+		9B6D96D322308ED4009E4363 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Day3_W2019_iOS_LoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CestarCollege.Day3-W2019-iOS-LoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Day3_W2019_iOS_Login;
+			};
+			name = Debug;
+		};
+		9B6D96D422308ED4009E4363 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Day3_W2019_iOS_LoginUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CestarCollege.Day3-W2019-iOS-LoginUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Day3_W2019_iOS_Login;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B6D969F22308ED4009E4363 /* Build configuration list for PBXProject "Day3_W2019_iOS_Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6D96CA22308ED4009E4363 /* Debug */,
+				9B6D96CB22308ED4009E4363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6D96CC22308ED4009E4363 /* Build configuration list for PBXNativeTarget "Day3_W2019_iOS_Login" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6D96CD22308ED4009E4363 /* Debug */,
+				9B6D96CE22308ED4009E4363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6D96CF22308ED4009E4363 /* Build configuration list for PBXNativeTarget "Day3_W2019_iOS_LoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6D96D022308ED4009E4363 /* Debug */,
+				9B6D96D122308ED4009E4363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B6D96D222308ED4009E4363 /* Build configuration list for PBXNativeTarget "Day3_W2019_iOS_LoginUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B6D96D322308ED4009E4363 /* Debug */,
+				9B6D96D422308ED4009E4363 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B6D969C22308ED4009E4363 /* Project object */;
+}
