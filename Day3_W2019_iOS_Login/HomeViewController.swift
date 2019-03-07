@@ -43,7 +43,7 @@ class HomeViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
        //teacher draged from btnAbout to AboutUsController with "moveToAboutUsSegue" identifier to demonstrate that even if it has a link from code of login then overrides.
-        if segue.identifier == "moveToAboutUsSegue"
+       /* if segue.identifier == "moveToAboutUsSegue"
         {
             if let destinationVC = segue.destination as? AboutUsViewController {
                 destinationVC.x = 1_000
@@ -54,7 +54,7 @@ class HomeViewController: UIViewController {
             
         }
         
-        
+        */
         
     }
     
