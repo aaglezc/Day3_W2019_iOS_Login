@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="924" y="127"/>
+            <point key="canvasLocation" x="929" y="-125"/>
         </scene>
         <!--Home Title-->
         <scene sceneID="OHO-UH-28w">
@@ -93,6 +93,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="About Us"/>
                                 <connections>
+                                    <action selector="btnAbout:" destination="AJU-49-oU5" eventType="touchUpInside" id="USo-i9-SOX"/>
                                     <segue destination="JfO-3X-nN9" kind="show" id="uwJ-kg-ML1"/>
                                 </connections>
                             </button>
@@ -102,11 +103,12 @@
                     </view>
                     <connections>
                         <outlet property="lblUserEmail" destination="mjf-Ng-siQ" id="gje-nM-vTs"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="moveToLoginSegue" id="bBN-Vp-VF9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51l-Cb-eLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="134"/>
+            <point key="canvasLocation" x="1716" y="-87"/>
         </scene>
         <!--About Us-->
         <scene sceneID="12s-EE-bbH">
@@ -131,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAk-2R-y4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2492" y="127.28635682158921"/>
+            <point key="canvasLocation" x="2580" y="-88"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2cu-KE-zWP">
@@ -149,7 +151,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCP-Kc-EUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="133.5832083958021"/>
+            <point key="canvasLocation" x="-255" y="-876"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bBN-Vp-VF9"/>
+    </inferredMetricsTieBreakers>
 </document>

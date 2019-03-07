@@ -30,15 +30,33 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBar.barTintColor = UIColor.blue
     }
     
-
-    /*
+    @IBAction func btnAbout(_ sender: Any)
+    {
+        self.performSegue(withIdentifier: "moveToLoginSegue", sender: nil)
+    }
+    
+   
+    
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+       //teacher draged from btnAbout to AboutUsController with "moveToAboutUsSegue" identifier to demonstrate that even if it has a link from code of login then overrides.
+        if segue.identifier == "moveToAboutUsSegue"
+        {
+            if let destinationVC = segue.destination as? AboutUsViewController {
+                destinationVC.x = 1_000
+            }
+        }
+        if segue.identifier == "moveToLoginSegue"
+        {
+            
+        }
+        
+        
+        
     }
-    */
+    
 
 }
