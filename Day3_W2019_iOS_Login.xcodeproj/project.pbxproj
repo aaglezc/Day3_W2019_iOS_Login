@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		9B6D96A822308ED4009E4363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96A722308ED4009E4363 /* AppDelegate.swift */; };
-		9B6D96AA22308ED4009E4363 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96A922308ED4009E4363 /* ViewController.swift */; };
+		9B6D96AA22308ED4009E4363 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96A922308ED4009E4363 /* LoginViewController.swift */; };
 		9B6D96AD22308ED4009E4363 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D96AB22308ED4009E4363 /* Main.storyboard */; };
 		9B6D96AF22308ED4009E4363 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D96AE22308ED4009E4363 /* Assets.xcassets */; };
 		9B6D96B222308ED4009E4363 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B6D96B022308ED4009E4363 /* LaunchScreen.storyboard */; };
 		9B6D96BD22308ED4009E4363 /* Day3_W2019_iOS_LoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96BC22308ED4009E4363 /* Day3_W2019_iOS_LoginTests.swift */; };
 		9B6D96C822308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96C722308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.swift */; };
+		9B6D96D622309DA9009E4363 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96D522309DA9009E4363 /* HomeViewController.swift */; };
+		9B6D96D822309FFC009E4363 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6D96D722309FFC009E4363 /* AboutUsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		9B6D96A422308ED4009E4363 /* Day3_W2019_iOS_Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Day3_W2019_iOS_Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6D96A722308ED4009E4363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9B6D96A922308ED4009E4363 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9B6D96A922308ED4009E4363 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9B6D96AC22308ED4009E4363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B6D96AE22308ED4009E4363 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B6D96B122308ED4009E4363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		9B6D96C322308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Day3_W2019_iOS_LoginUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B6D96C722308ED4009E4363 /* Day3_W2019_iOS_LoginUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day3_W2019_iOS_LoginUITests.swift; sourceTree = "<group>"; };
 		9B6D96C922308ED4009E4363 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B6D96D522309DA9009E4363 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		9B6D96D722309FFC009E4363 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				9B6D96A722308ED4009E4363 /* AppDelegate.swift */,
-				9B6D96A922308ED4009E4363 /* ViewController.swift */,
+				9B6D96A922308ED4009E4363 /* LoginViewController.swift */,
 				9B6D96AB22308ED4009E4363 /* Main.storyboard */,
 				9B6D96AE22308ED4009E4363 /* Assets.xcassets */,
 				9B6D96B022308ED4009E4363 /* LaunchScreen.storyboard */,
 				9B6D96B322308ED4009E4363 /* Info.plist */,
+				9B6D96D522309DA9009E4363 /* HomeViewController.swift */,
+				9B6D96D722309FFC009E4363 /* AboutUsViewController.swift */,
 			);
 			path = Day3_W2019_iOS_Login;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B6D96AA22308ED4009E4363 /* ViewController.swift in Sources */,
+				9B6D96D822309FFC009E4363 /* AboutUsViewController.swift in Sources */,
+				9B6D96AA22308ED4009E4363 /* LoginViewController.swift in Sources */,
 				9B6D96A822308ED4009E4363 /* AppDelegate.swift in Sources */,
+				9B6D96D622309DA9009E4363 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
