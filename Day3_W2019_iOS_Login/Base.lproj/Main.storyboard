@@ -71,7 +71,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="929" y="-125"/>
+            <point key="canvasLocation" x="-274" y="-128"/>
         </scene>
         <!--Home Title-->
         <scene sceneID="OHO-UH-28w">
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="51l-Cb-eLo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1716" y="-87"/>
+            <point key="canvasLocation" x="446" y="-128"/>
         </scene>
         <!--About Us-->
         <scene sceneID="12s-EE-bbH">
@@ -119,21 +119,53 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DYc-sQ-5L1">
-                                <rect key="frame" x="132" y="253" width="137" height="30"/>
+                                <rect key="frame" x="119" y="617" width="137" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go to Home scrren"/>
                                 <connections>
                                     <action selector="btnGoHome:" destination="JfO-3X-nN9" eventType="touchUpInside" id="B6n-VS-oFf"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WuN-ri-J0e">
+                                <rect key="frame" x="16" y="146" width="343" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Cat 1"/>
+                                    <segment title="Cat 2"/>
+                                    <segment title="Cat 3"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segment1:" destination="JfO-3X-nN9" eventType="valueChanged" id="52O-o8-ZBT"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuZ-Io-lKh">
+                                <rect key="frame" x="16" y="182" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="yXg-16-LXI">
+                                <rect key="frame" x="16" y="97" width="94" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stepper>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="2LO-Nr-plT">
+                                <rect key="frame" x="16" y="211" width="343" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="R7E-go-oGs"/>
                     </view>
+                    <connections>
+                        <outlet property="img1" destination="2LO-Nr-plT" id="ZYw-t5-TFI"/>
+                        <outlet property="lbl1" destination="KuZ-Io-lKh" id="gTe-Wy-OKs"/>
+                        <outlet property="seg1" destination="WuN-ri-J0e" id="uXV-du-yah"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DAk-2R-y4c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2580" y="-88"/>
+            <point key="canvasLocation" x="1216.8" y="-128.18590704647679"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2cu-KE-zWP">
@@ -151,9 +183,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GCP-Kc-EUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-255" y="-876"/>
+            <point key="canvasLocation" x="-274" y="-860"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="images1.jpeg" width="259" height="195"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="bBN-Vp-VF9"/>
     </inferredMetricsTieBreakers>

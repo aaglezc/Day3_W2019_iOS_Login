@@ -10,10 +10,17 @@ import UIKit
 
 class AboutUsViewController: UIViewController {
 
+    @IBOutlet weak var lbl1: UILabel!
+    @IBOutlet weak var img1: UIImageView!
+    @IBOutlet weak var seg1: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //Add sengment dynamically
+        seg1.insertSegment(withTitle: "Monkey", at: 3, animated: true)
     }
     
     @IBAction func btnGoHome(_ sender: UIButton) {
@@ -22,6 +29,30 @@ class AboutUsViewController: UIViewController {
         
     }
     
+    @IBAction func segment1(_ sender: UISegmentedControl) {
+        
+        print(sender.selectedSegmentIndex)
+        
+        switch sender.selectedSegmentIndex
+        {
+        case 0:
+            lbl1.text = "Cat 1"
+            img1.image = UIImage(named: "images1.jpeg")
+        case 1:
+            lbl1.text = "Cat 2"
+            img1.image = UIImage(named: "images2.jpeg")
+        case 2:
+            lbl1.text = "Cat 3"
+            img1.image = UIImage(named: "images3.jpeg")
+        case 3:
+            lbl1.text = "I[m dynamic"
+            img1.image = UIImage(named: "images4")
+        default:
+            print("Invalid Selection")
+            
+        }
+        
+    }
     /*
     // MARK: - Navigation
 

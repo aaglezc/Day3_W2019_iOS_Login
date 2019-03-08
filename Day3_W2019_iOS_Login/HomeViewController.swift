@@ -24,10 +24,23 @@ class HomeViewController: UIViewController {
             self.lblUserEmail.text = e
         }
         self.navigationItem.hidesBackButton = true
-        self.navigationItem.title = "Im dynamic title"
+        self.navigationItem.title = "I'm dynamic title"
         self.navigationController?.hidesBarsOnTap = true
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.navigationBar.barTintColor = UIColor.blue
+        
+        let userDefault = UserDefaults.standard
+        if let email = userDefault.string(forKey: "userEmail")
+        {
+            print(email)
+        }
+        if let pwd   = userDefault.string(forKey: "userPassword")
+        {
+            print(pwd)
+        }
+        
+        
+        
     }
     
     @IBAction func btnAbout(_ sender: Any)

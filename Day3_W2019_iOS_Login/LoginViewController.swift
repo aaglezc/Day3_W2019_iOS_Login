@@ -17,6 +17,27 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let userDefault = UserDefaults.standard
+        
+        if let email = userDefault.string(forKey: "userEmail")
+        {
+            
+            lblemail.text = email
+            
+            if let pwd   = userDefault.string(forKey: "userPassword")
+            {
+                lblpwd.text = pwd
+            }
+            sw1.isOn = true
+        }
+        else
+        {
+            sw1.isOn = false
+        }
+        
+        
     }
     
     override func prepare(for segue:UIStoryboardSegue, sender : Any?)
@@ -33,22 +54,38 @@ class LoginViewController: UIViewController {
         
         if (email == "a@a.com" && pwd == "123" )
         {
+            
+            
+            
+            
+            
             print("success")
+            
+            var userDefault = UserDefaults.standard //singleton class
+            
             if (sw1.isOn)
             {
+                userDefault.set(email, forKey: "userEmail")
+                userDefault.set(pwd, forKey: "userPassword")
+                
+                
                 print("write code to remmeber userId and pwd ")
             }
             else
             {
+                userDefault.removeObject(forKey: "userEmail")
+                userDefault.removeObject(forKey: "userPassword")
+                
                 print("Remove userId/pwd if previously remembered ")
             }
-            //Move to another screen
             
+            //Move to another screen
             let sb = UIStoryboard(name: "Main", bundle: nil)
             let homeVC = sb.instantiateViewController(withIdentifier: "homeVC") as! HomeViewController
             
             self.navigationController?.pushViewController(homeVC, animated: true)
             //self.present(homeVC, animated: true)
+            
             
             
         }
