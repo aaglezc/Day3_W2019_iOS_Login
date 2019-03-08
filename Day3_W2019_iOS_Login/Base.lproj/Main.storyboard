@@ -127,7 +127,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WuN-ri-J0e">
-                                <rect key="frame" x="16" y="146" width="343" height="29"/>
+                                <rect key="frame" x="16" y="73" width="343" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="Cat 1"/>
@@ -138,21 +138,49 @@
                                     <action selector="segment1:" destination="JfO-3X-nN9" eventType="valueChanged" id="52O-o8-ZBT"/>
                                 </connections>
                             </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="2LO-Nr-plT">
+                                <rect key="frame" x="16" y="138" width="343" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KuZ-Io-lKh">
-                                <rect key="frame" x="16" y="182" width="343" height="21"/>
+                                <rect key="frame" x="16" y="109" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="yXg-16-LXI">
-                                <rect key="frame" x="16" y="97" width="94" height="29"/>
+                                <rect key="frame" x="16" y="311" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="stepper1:" destination="JfO-3X-nN9" eventType="valueChanged" id="CfO-dK-jeX"/>
+                                </connections>
                             </stepper>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="2LO-Nr-plT">
-                                <rect key="frame" x="16" y="211" width="343" height="160"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Stepper Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omu-Gb-AST">
+                                <rect key="frame" x="133" y="315" width="108" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wSj-8E-cc5">
+                                <rect key="frame" x="14" y="354" width="347" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="slide1:" destination="JfO-3X-nN9" eventType="valueChanged" id="UEv-WG-8x9"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Slide Value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="em3-5w-2ma">
+                                <rect key="frame" x="16" y="391" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="yAx-5j-Onj">
+                                <rect key="frame" x="16" y="434" width="350" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="R7E-go-oGs"/>
@@ -160,6 +188,9 @@
                     <connections>
                         <outlet property="img1" destination="2LO-Nr-plT" id="ZYw-t5-TFI"/>
                         <outlet property="lbl1" destination="KuZ-Io-lKh" id="gTe-Wy-OKs"/>
+                        <outlet property="lblSlider" destination="em3-5w-2ma" id="IAx-hv-1M3"/>
+                        <outlet property="lblStepper" destination="omu-Gb-AST" id="LsA-eX-Y4d"/>
+                        <outlet property="progressBar" destination="yAx-5j-Onj" id="umE-Wl-FNh"/>
                         <outlet property="seg1" destination="WuN-ri-J0e" id="uXV-du-yah"/>
                     </connections>
                 </viewController>

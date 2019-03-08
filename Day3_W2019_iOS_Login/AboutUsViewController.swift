@@ -13,6 +13,10 @@ class AboutUsViewController: UIViewController {
     @IBOutlet weak var lbl1: UILabel!
     @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var seg1: UISegmentedControl!
+    @IBOutlet weak var lblStepper: UILabel!
+    @IBOutlet weak var lblSlider: UILabel!
+ 
+    @IBOutlet weak var progressBar: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +57,26 @@ class AboutUsViewController: UIViewController {
         }
         
     }
+    
+    
+    @IBAction func stepper1(_ sender: UIStepper) {
+        
+        lblStepper.text = "\(sender.value)"
+    }
+    
+    
+    @IBAction func slide1(_ sender: UISlider) {
+        lblSlider.text = "\(sender.value)"
+        progressBar.progress = sender.value / 100.00
+        
+        
+        
+    }
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 
